@@ -11,7 +11,7 @@ The MRG method was proposed by Hilaga et al. [1]. This implementation of MRG was
  - The code was developed using J2SE 1.4, so it does not use Java generics (introduced in J2SE 5.0)
  - **3D models must be specified in a specially-formatted VRML files** (see below)
    - Face-vertex meshes with triangle and quad faces are supported
-   - Several sample models are included in this package
+   - 16 sample models are included in this package
 
 ### References
 
@@ -30,6 +30,14 @@ The MRG method was proposed by Hilaga et al. [1]. This implementation of MRG was
 
 Package Content
 ---------------------
+
+### Source Code
+
+[`src/ExtractReebGraph.java`](ExtractReebGraph.java)
+[`src/CompareReebGraph.java`](dbespalov/reeb_graph/blob/master/src/CompareReebGraph.java)
+
+### Sample 3D Models
+
 
 Sample Usage
 ---------------------
