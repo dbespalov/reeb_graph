@@ -33,8 +33,8 @@ Package Content
 
 ### Source Code
 
-[`src/ExtractReebGraph.java`](ExtractReebGraph.java)
-[`src/CompareReebGraph.java`](dbespalov/reeb_graph/blob/master/src/CompareReebGraph.java)
+[`src/ExtractReebGraph.java`](src/ExtractReebGraph.java)
+[`src/CompareReebGraph.java`](src/CompareReebGraph.java)
 
 ### Sample 3D Models
 
