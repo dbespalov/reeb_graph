@@ -59,7 +59,41 @@ VRML parser in [`ExtractReebGraph`](src/ExtractReebGraph.java) can **only** hand
 Sample Usage
 ---------------------
 
+### Compiling
 
+```bash
+$ javac src/*.java
+```
+
+```bash
+$ ls -1 models/*.wrl  | head -5
+
+models/bracket_1.wrl
+models/bracket_2.wrl
+models/bracket_3.wrl
+models/fork_1.wrl
+models/fork_2.wrl
+```
+
+```bash
+$ ls models/*.wrl  | xargs  java -cp "./src/" -Xmx1024m ExtractReebGraph   4000 0.0005 128
+```
+
+
+
+```bash
+$ ls -1 models/*.mrg  | head -5
+
+models/bracket_1.mrg
+models/bracket_2.mrg
+models/bracket_3.mrg
+models/fork_1.mrg
+models/fork_2.mrg
+```
+
+```bash
+$ ls models/*.wrl  | xargs  java -cp "./src/" -Xmx1024m CompareReebGraph   4000 0.0005 128 0.5
+```
 
 
 License
