@@ -41,9 +41,9 @@ The source code is located in [`src/`](src/) directory. There are **two** main j
       + `<sim_weight>`   &ndash; weight `w` used in similarity function (trade-off between attributes `a` and `l` in [1])
       + `<model_i>.wrl`   &ndash; a list of VRML models to compare for `i=[1,N]` (it is assumed that each  model was processed using `ExtractReebGraph` program, and MRG for `<model_i>.wrl` was stored in `<model_i>.mrg`)
 
-### Sample Models 
+### CAD Models 
 
-The following 3D CAD models in VRML format can be found in [`models/`](models/) directory:
+The following 3D models in VRML format can be found in [`models/`](models/) directory:
 
 <a target="_blank" href="https://raw.github.com/dbespalov/reeb_graph/master/figs/sample_models.pdf"><img  width="300px"  src="https://raw.github.com/dbespalov/reeb_graph/master/figs/sample_models.png"/></a>
 
