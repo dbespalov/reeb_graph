@@ -76,7 +76,7 @@ References
 
 2. Reeb graph based shape retrieval for CAD.  
    Dmitriy Bespalov, William C. Regli, and Ali Shokoufandeh.  
-   ASME IDETC, 2003. [doi:10.1115/DETC2003/CIE-48194](http://dx.doi.org/10.1115/DETC2003/CIE-48194)
+   *ASME IDETC*, 2003. [doi:10.1115/DETC2003/CIE-48194](http://dx.doi.org/10.1115/DETC2003/CIE-48194)
 
 3. Benchmarking search techniques for CAD.  
    Dmitriy Bespalov, Cheuk Yiu Ip, William C. Regli, and Joshua Shaffer.  
