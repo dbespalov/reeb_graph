@@ -69,7 +69,9 @@ GNU General Public License
 
 References
 ---------------------
+
 <div id="md-bib"/>
+
 1. Topology Matching for Fully Automatic Similarity Estimation of 3D Shapes.  
    Masaki Hilaga, Yoshihisa Shinagawa, Taku Kohmura, and Tosiyasu L. Kunii.  
    *SIGGRAPH*, 2001. [doi:10.1145/383259.383282](http://dx.doi.org/10.1145/383259.383282)                                                             
