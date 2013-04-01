@@ -42,7 +42,7 @@ There are **two** main java classes:
 
 The following 3D models in VRML format can be found in [`models/`](models/) directory:
 
-<a href="https://raw.github.com/dbespalov/reeb_graph/master/figs/sample_models.pdf"><img  width="300px" target="_blank" src="https://raw.github.com/dbespalov/reeb_graph/master/figs/sample_models.png"/></a>
+<a target="_blank" href="https://raw.github.com/dbespalov/reeb_graph/master/figs/sample_models.pdf"><img  width="300px"  src="https://raw.github.com/dbespalov/reeb_graph/master/figs/sample_models.png"/></a>
 
 
 VRML parser in [`ExtractReebGraph`](src/ExtractReebGraph.java) can **only** handle specially-formatted face-vertex meshes:
