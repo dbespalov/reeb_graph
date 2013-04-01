@@ -33,6 +33,13 @@ The following 16 CAD models in VRML format can be found in [`models/`](models/) 
 
 <a href="https://raw.github.com/dbespalov/reeb_graph/master/figs/sample_models.pdf"><img  width="300px" target="_blank" src="https://raw.github.com/dbespalov/reeb_graph/master/figs/sample_models.png"/></a>
 
+VRML parser in [`ExtractReebGraph`](src/ExtractReebGraph.java) can only handle specially-formatted face-vertex meshes:
+  1. Vertex lists are assumed to be enclosed by strings `point [\n` and `]\n`
+    * Coordinates for each point must appear on a separate line in the VRML file (e.g., `1.5 3.2 0.2,\n`)
+  2. Face lists are assumed to be enclosed by strings `coordIndex [\n` and `]\n`
+    * Each face must appear on a separate line (e.g., `0, 2, 1, -1,\n` encodes a triangle face)
+  
+
 Usage
 ---------------------
 
