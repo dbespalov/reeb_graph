@@ -29,7 +29,7 @@ There are **two** main java classes:
 
 ### Sample 3D Models 
 
-The following models can be found in [`models/`](models/) directory.
+The following 16 CAD models in VRML format can be found in [`models/`](models/) directory:
 
 <img  width="300px" target="_blank" src="https://raw.github.com/dbespalov/reeb_graph/master/figs/sample_models.png" href="https://raw.github.com/dbespalov/reeb_graph/master/figs/sample_models.png"  />
 
