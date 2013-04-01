@@ -10,7 +10,7 @@ This implementation was used to obtain experimental results that were reported i
 
  - Programming language: **Java**
  - The code was developed using J2SE 1.4, so it does not use Java generics (introduced in J2SE 5.0)
- - **3D models must be specified in a specially-formatted VRML files** (see below)
+ - **3D models must be specified in a specially-formatted VRML files** (see [below](#cad-models))
    - Face-vertex meshes with triangle and quad faces are supported
    - 16 sample models are included in this package
 
@@ -65,6 +65,10 @@ Sample Usage
 $ javac src/*.java
 ```
 
+### MRG Construction
+
+3D models must be saved in a specially-formatted VRML files (see [CAD Models](#cad-models))
+
 ```bash
 $ ls -1 models/*.wrl  | head -5
 
@@ -75,11 +79,13 @@ models/fork_1.wrl
 models/fork_2.wrl
 ```
 
+Compute MRGs for all `*.wrl` files in a directory:
+
 ```bash
 $ ls models/*.wrl  | xargs  java -cp "./src/" -Xmx1024m ExtractReebGraph   4000 0.0005 128
 ```
 
-
+MRGs are saved into `*.mrg` files:
 
 ```bash
 $ ls -1 models/*.mrg  | head -5
@@ -91,9 +97,31 @@ models/fork_1.mrg
 models/fork_2.mrg
 ```
 
+### MRG Matching
+
+Compute pairwise similarity values for 3D models using their MRG representation:
+
 ```bash
 $ ls models/*.wrl  | xargs  java -cp "./src/" -Xmx1024m CompareReebGraph   4000 0.0005 128 0.5
 ```
+
+The similarity values are stored in `log_<pts_num>_<mu_coef>_<mrg_size>_<sim_weight>` file:
+
+```bash
+$ shuf log_4000_5.0E-4_128_0.5 | head -5
+
+Similarity between models/goodpart_2.wrl and models/fork_3.wrl is 0.7661396393161327
+Similarity between models/housing_1.wrl and models/socket_2.wrl is 0.6789623740585898
+Similarity between models/fork_3.wrl and models/bracket_2.wrl is 0.8125245864576977
+Similarity between models/goodpart_1.wrl and models/socket_2.wrl is 0.8162694461373452
+Similarity between models/bracket_3.wrl and models/housing_1.wrl is 0.6865232310951028
+```
+
+### Retrieval Results
+
+Pairwise similarity values can be used to rank 3D models in terms of their relevance to a query model. Five top-ranked models for selected queries are:
+
+<a target="_blank" href="https://raw.github.com/dbespalov/reeb_graph/master/figs/sample_matches.pdf"><img  width="400px"  src="https://raw.github.com/dbespalov/reeb_graph/master/figs/sample_matches.png"/></a>
 
 
 License
