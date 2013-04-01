@@ -19,8 +19,7 @@ Package Contents
 
 ### Source Code
 
-The source code is located in [`src/`](src/) directory. 
-There are **two** main java classes:
+The source code is located in [`src/`](src/) directory. There are **two** main java classes:  
 
 1. [`ExtractReebGraph`](src/ExtractReebGraph.java) class constructs MRGs for 3D models and saves them into text files
   - This procedure for MRG construction is described in Section 4 of [1]
