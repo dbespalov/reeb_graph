@@ -3,8 +3,8 @@ Description
 
 Topological similarity estimation for 3D models (face-vertex meshes) using multiresolutional Reeb graphs (MRG).
 
-The MRG method was proposed by Hilaga et al. in [1]. 
-This implementation was used to obtain experimental results that were reported in [2] and [3]. 
+The MRG method was proposed by Hilaga et al. in [[1]](#references). 
+This implementation was used to obtain experimental results that were reported in [[2]](#references) and [[3]](#references). 
 
 ### Implementation Notes
 
@@ -22,23 +22,23 @@ Package Contents
 The source code is located in [`src/`](src/) directory. There are **two** main java classes:  
 
 1. [`ExtractReebGraph`](src/ExtractReebGraph.java) class constructs MRGs for 3D models and saves them into text files.
-  - This procedure for MRG construction is described in Section 4 of [1].
+  - This procedure for MRG construction is described in Section 4 of [[1]](#references).
   - **Usage:**  
     `java ExtractReebGraph`  `<num_pts>`  `<mu_coeff>`  `<mrg_size>`  `<model_1>.wrl`  `<model_2>.wrl` ... `<model_N>.wrl`  
     **where:**
       + `<num_pts>`   &ndash; target number of vertices prior to MRG construction (triangle faces are resampled to match `<num_pts>`)
-      + `<mu_coeff>`    &ndash; coefficient for calculating threshold parameter `r=sqrt(mu_coeff * area(S))`, which in turn is used to approximate values of function `mu` in [1]
-      + `<mrg_size>`   &ndash; number of ranges in the finest resolution of MRG (parameter `K` in [1])
+      + `<mu_coeff>`    &ndash; coefficient for calculating threshold parameter `r=sqrt(mu_coeff * area(S))`, which in turn is used to approximate values of function `mu` in [[1]](#references)
+      + `<mrg_size>`   &ndash; number of ranges in the finest resolution of MRG (parameter `K` in [[1]](#references))
       + `<model_i>.wrl`   &ndash; i-th VRML model for `i=[1,N]` (MRG for each model is stored in `<model_i>.mrg`)
 2. [`CompareReebGraph`](src/CompareReebGraph.java) class implements matching algorithm for a pairwise comparison of MRGs.
-  - The matching algorithm is described in Section 5 of [1].
+  - The matching algorithm is described in Section 5 of [[1]](#references).
   - **Usage:**  
     `java CompareReebGraph`  `<num_pts>`  `<mu_coeff>`  `<mrg_size>`  `<sim_weight>`  `<model_1>.wrl` ... `<model_N>.wrl`  
     **where:**
       + `<num_pts>`   &ndash; target number of vertices prior to MRG construction (triangle faces are resampled to match `<num_pts>`)
-      + `<mu_coeff>`    &ndash; coefficient for calculating threshold parameter `r=sqrt(mu_coeff * area(S))`, which in turn is used to approximate values of function `mu` in [1]
-      + `<mrg_size>`   &ndash; number of ranges in the finest resolution of MRG (parameter `K` in [1])
-      + `<sim_weight>`   &ndash; weight `w` used in similarity function (trade-off between attributes `a` and `l` in [1])
+      + `<mu_coeff>`    &ndash; coefficient for calculating threshold parameter `r=sqrt(mu_coeff * area(S))`, which in turn is used to approximate values of function `mu` in [[1]](#references)
+      + `<mrg_size>`   &ndash; number of ranges in the finest resolution of MRG (parameter `K` in [[1]](#references))
+      + `<sim_weight>`   &ndash; weight `w` used in similarity function (trade-off between attributes `a` and `l` in [[1]](#references))
       + `<model_i>.wrl`   &ndash; a list of VRML models to compare for `i=[1,N]` (it is assumed that each  model was processed using `ExtractReebGraph` program, and MRG for `<model_i>.wrl` was stored in `<model_i>.mrg`)
 
 ### CAD Models 
