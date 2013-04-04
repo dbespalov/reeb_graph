@@ -9,7 +9,8 @@ This implementation was used to obtain experimental results that were reported i
 ### Implementation Notes
 
  - Programming language: **Java**
- - The code was developed using J2SE 1.4, so it does not use Java generics (introduced in J2SE 5.0)
+ - Software Prerequisites: JavaSE 1.4+
+   - NOTE: the code was developed using JavaSE 1.4, so it does not use Java generics (introduced in JavaSE 5.0)
  - **3D models must be specified in a specially-formatted VRML files** (see [below](#cad-models))
    - Face-vertex meshes with triangle and quad faces are supported
    - 16 sample models are included in this package
@@ -132,14 +133,14 @@ GNU General Public License
 References
 ---------------------
 
-1. Topology Matching for Fully Automatic Similarity Estimation of 3D Shapes.  
-   Masaki Hilaga, Yoshihisa Shinagawa, Taku Kohmura, and Tosiyasu L. Kunii.  
-   *SIGGRAPH*, 2001. [doi:10.1145/383259.383282](http://dx.doi.org/10.1145/383259.383282)                                                             
+1. Masaki Hilaga, Yoshihisa Shinagawa, Taku Kohmura, and Tosiyasu L. Kunii.  
+   Topology Matching for Fully Automatic Similarity Estimation of 3D Shapes.  
+   *SIGGRAPH*, 2001. [doi:10.1145/383259.383282](http://dx.doi.org/10.1145/383259.383282) 
 
-2. Reeb graph based shape retrieval for CAD.  
-   Dmitriy Bespalov, William C. Regli, and Ali Shokoufandeh.  
+2. Dmitriy Bespalov, William C. Regli, and Ali Shokoufandeh.  
+   Reeb graph based shape retrieval for CAD.  
    *ASME IDETC*, 2003. [doi:10.1115/DETC2003/CIE-48194](http://dx.doi.org/10.1115/DETC2003/CIE-48194)
 
-3. Benchmarking search techniques for CAD.  
-   Dmitriy Bespalov, Cheuk Yiu Ip, William C. Regli, and Joshua Shaffer.  
+3. Dmitriy Bespalov, Cheuk Yiu Ip, William C. Regli, and Joshua Shaffer.  
+   Benchmarking search techniques for CAD.  
    *ACM SPM*, 2005. [doi:10.1145/1060244.1060275](http://dx.doi.org/10.1145/1060244.1060275)
