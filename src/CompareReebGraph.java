@@ -78,8 +78,7 @@ public class CompareReebGraph {
     public static double SIM_R_S;
     
     public static PrintWriter out;
-    
-    
+        
     /*
     |  usage: java -Xmx512m  CompareReebGraph  <num_pts>  <mu_coeff>  <mrg_size>  <sim_weight>  <model_1>.wrl  <model_2>.wrl ... <model_N>.wrl
     |
@@ -89,7 +88,8 @@ public class CompareReebGraph {
     |    <mu_coeff>      -- coefficient for calculating threshold parameter r=sqrt(mu_coeff * area(S)),
     |                       used to approximate mu values
     |
-    |    <mrg_size>      -- number of ranges K used in the finest resolution of MRG
+    |    <mrg_size>      -- number of ranges in the finest resolution of MRG (parameter K in [1])
+    |
     |   
     |    <sim_weight>    -- weight w used in similarity function (trade-off between attributes a and l)
     |	   

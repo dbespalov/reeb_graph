@@ -87,10 +87,10 @@ public class ExtractReebGraph {
     |    <mu_coeff>      -- coefficient for calculating threshold parameter r=sqrt(mu_coeff * area(S)),
     |                       used to approximate mu values
     |
-    |    <mrg_size>      -- number of ranges K used in the finest resolution of MRG
+    |    <mrg_size>      -- number of ranges in the finest resolution of MRG (parameter K in [1])
     |	   
-    |    <model_i>.wrl   -- i-th VRML model to process, where i=[1,N]. 
-    |                       Extracted MRG for this model is stored in a text file <model_i>.mrg 
+    |    <model_i>.wrl   -- i-th VRML model to process for i=[1,N] 
+    |                       (MRG for this model is stored in text file <model_i>.mrg)
     */
 
     public static void main (String arg[]) throws IOException {
