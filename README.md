@@ -10,7 +10,7 @@ This implementation was used to obtain experimental results that were reported i
 
  - Programming language: **Java**
  - Software Prerequisites: JavaSE 1.4+
-   - NOTE: the code was developed using JavaSE 1.4, so it does not use Java generics (introduced in JavaSE 5.0)
+   - the code was developed using JavaSE 1.4, so it does not use Java generics (introduced in JavaSE 5.0)
  - **3D models must be specified in a specially-formatted VRML files** (see [below](#cad-models))
    - Face-vertex meshes with triangle and quad faces are supported
    - 16 sample models are included in this package
